@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.buyButton{
+  background-color: #f65621;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  transition: background-color 300ms;
+}
