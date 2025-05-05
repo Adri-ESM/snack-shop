@@ -1,35 +1,35 @@
+@import '../../styles/variables';
+
 .card {
-    width: 100%;
-    max-width: 240px;
-    margin: auto;
-  
-    img {
-      height: 200px;
-      object-fit: cover;
-    }
-  
-    .meta {
-      margin-bottom: 8px;
-    }
-  
-    .price {
-      font-weight: bold;
-      color: #2b2b2b;
-      margin-bottom: 8px;
-    }
-  
-    .addButton {
-      background-color: #ffffff;
-      color: #000000;
-      border: 1px solid #000000;
-      transition: all 0.3s ease;
-    
-      &:hover {
-        background-color: #ffffff;
-        color: #ffa94d;
-        border: 1px solid #000000;
-      }
-    }
-    
+  width: 100%;
+  max-width: 240px;
+  margin: auto;
+
+  img {
+    height: 200px;
+    object-fit: cover;
   }
-  
+
+  .meta {
+    margin-bottom: $spacing-sm;
+  }
+
+  .price {
+    font-weight: bold;
+    color: $color-text-main;
+    margin-bottom: $spacing-sm;
+  }
+
+  .addButton {
+    background-color: $hover-bg-light;
+    color: $hover-text-dark;
+    border: 1px solid $border-hover-dark;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $hover-bg-light;
+      color: $color-primary;
+      border: 1px solid $border-hover-dark;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// 🎨 COLORS
+$color-primary: #ffa94d;
+$color-primary-dark: #e08a2e;
+$color-secondary: #ffec99;
+$color-text-main: #2b2b2b;
+$color-text-light: #ffffff;
+$color-border: #eaeaea;
+$hover-bg-light: #ffffff;
+$hover-text-dark: #000000;
+$border-hover-dark: #000000;
+
+// 🅰️ TYPOGRAPHY
+$font-family-base: 'Inter', sans-serif;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 20px;
+
+// 📐 SPACING
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// 🧱 BORDER & RADIUS
+$border-radius: 6px;
+$border: 1px solid $color-border;
+
+// 🌫 SHADOWS
+$shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);

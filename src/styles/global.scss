@@ -1,0 +1,21 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text-main;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: $font-size-base;
+  transition: all 0.3s ease;
+  border-radius: $border-radius;
+}
