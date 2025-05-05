@@ -1,0 +1,17 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    &.active {
+        color: var(--color-primary);
+    }
+    
+    &.disabled {
+        color: var(--color-disabled);
+        pointer-events: none;
+    }
+}

@@ -1,5 +1,6 @@
 import { Card, Button } from 'antd'
 import styles from './SnackCard.module.scss'
+import { useCart } from '../../context/CartContext'
 
 interface SnackCardProps {
   title: string
@@ -8,12 +9,19 @@ interface SnackCardProps {
   image: string
 }
 
-export const SnackCard: React.FC<SnackCardProps> = ({
+export const SnackCard: React.FC<SnackCardProps & { id: number }> = ({
+  id,
   title,
   description,
   price,
   image
 }) => {
+  const { addItem } = useCart()
+
+  const handleAdd = () => {
+    addItem({ id, title, price, quantity: 1 })
+  }
+
   return (
     <Card
       hoverable
@@ -24,7 +32,9 @@ export const SnackCard: React.FC<SnackCardProps> = ({
         <Card.Meta title={title} description={description} />
       </div>
       <p className={styles.price}>${price.toFixed(2)}</p>
-      <Button className={styles.addButton}>Add to Cart</Button>
+      <Button className={styles.addButton} onClick={handleAdd}>
+        Add to Cart
+      </Button>
     </Card>
   )
 }

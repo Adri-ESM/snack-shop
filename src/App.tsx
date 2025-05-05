@@ -2,6 +2,7 @@ import { Button } from 'antd'
 import { Row, Col } from 'antd'
 import { useMemo } from 'react'
 import { SnackCard } from './components/snackCard/SnackCard'
+import { CartIcon } from './components/cartIcon/CartIcon'
 import './App.css'
 
 function App () {
@@ -36,11 +37,13 @@ function App () {
 
   return (
     <div style={{ padding: '2rem' }}>
+      <CartIcon />
       <h1>Healthy Snacks 🥜</h1>
       <Row gutter={[16, 16]}>
         {snacks.map(snack => (
           <Col span={8} key={snack.id}>
             <SnackCard
+              id={snack.id}
               title={snack.title}
               description={snack.description}
               price={snack.price}
@@ -48,8 +51,9 @@ function App () {
             />
           </Col>
         ))}
-        <Button className='buyButton'>Comprar snack</Button>
       </Row>
+
+      <Button className='buyButton'>Buy snack</Button>
     </div>
   )
 }
